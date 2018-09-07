@@ -1,0 +1,358 @@
+/* GETTING FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+/* BASIC STYLES */
+
+body {
+	    background: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color: #343434;
+      margin: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+
+
+/* BASIC TYPO */
+
+p {
+  font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+  color: #000;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+/* LOGO BAR */
+
+#top-header {
+  background: #ececec;
+  height: 120px;
+  line-height: 120px;
+}
+
+.top-header-logo {
+  width: 25%; 
+  float: left;
+  vertical-align: middle;
+}
+
+.top-title {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.top-header-logo img {
+	width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/* NAV */
+
+nav {
+  clear: both;
+}
+
+.mainnav ul {
+  list-style: none;
+  background: #653f3f;
+  padding: 0;
+  margin: 0;
+}
+.mainnav li {
+  font-size: 0.9em;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.mainnav a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.mainnav li:hover {
+  background: #fff;  
+  transition: .2s;
+}
+.mainnav a:hover {
+    color: #653f3f;
+}
+
+
+
+/* HERO */
+
+.hero {
+  height: 220px;
+  padding: 0 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 4em;
+}
+
+
+
+/* CONTENT SECTION */
+
+.content-image {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.content {
+  padding:  30px 0;
+}
+
+.about-page {
+  text-align: center;
+}
+
+.content h2 {
+  text-transform: uppercase;
+}
+
+
+/* POST TEASER */
+
+.featured  {
+  width: 100%;
+}
+
+.featured h3 {
+  background: #968383;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 7px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+.post-container {
+  padding: 0 0 30px;
+}
+
+.img-container {
+max-height: 220px;
+overflow: hidden;
+}
+
+.img-container img {
+    max-width: 400px;     /*------ yeah, well. i dont know ... ------ */
+    width: 100%;
+    height: auto;
+}
+
+.teaser {
+  max-width: 400px;       /*------ see above ------ */
+}
+
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.footer hr {
+  border-top: 5px solid #968383;
+}
+
+.footer img {
+  padding: 10px;
+width: 150px;
+height: auto;
+}
+
+
+
+/* BLOG PAGE */
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px;
+} 
+
+.date {
+  text-align: right;
+}
+
+.blog-post-container-left {
+  flex-basis: 70%;
+}
+
+.blog-img-container {
+height: 220px;
+overflow: hidden;
+}
+
+.hero-blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-post-container-right {
+  flex-basis: 30%;
+  color: #fff;
+}
+
+.article {
+  padding: 0 100px 0 0;
+}
+
+article > p:first-of-type {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+h2.post-headline {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.author {
+  background: #968383;
+  padding: 15px;
+}
+ 
+ .author img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+ }
+
+.author-img {
+  text-align: center;
+}
+
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/*THIS IS FOR THE HEADER */
+@media only screen and (max-width:32.5em) { 
+  .top-header-logo {
+    width: auto;
+    float: none;
+}
+
+#top-header {
+  line-height: 1em;
+  height: 140px;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.top-header-logo img {
+  width: 200px;
+}
+
+.title-top-header {
+  padding: 10px 0 0 0;
+  clear: both;
+}
+
+.mainnav ul {
+  text-align: center;
+}
+
+.mainnav a {
+  font-size: 0.9em;
+}
+
+}
+
+
+/*THIS IS FOR SHRINKING THE HERO TEXT */
+@media only screen and (max-width:30em) { 
+  .hero-title {
+    font-size: 2.5em;
+  }
+}
+
+
+/* ADJUSTING WIDTH OF POST AND SIDEBAR N BLOG PAGE */ 
+
+@media only screen and (max-width:42.5em) { 
+  .blog-post-container-left {
+    flex-basis: 100%;
+}
+
+.blog-post-container-right {
+    flex-basis: 100%;
+    color: #fff;
+}
+
+.article {
+    padding:0;
+}
+
+h2.post-headline {
+    width: 100%;
+}
+}
+
+
+/* CENTERING POST TEASERS ON THE FRONTPAGE */
+
+@media only screen and (max-width:51.25em) { 
+  .posts-container {
+    justify-content: space-around;
+}
+}
